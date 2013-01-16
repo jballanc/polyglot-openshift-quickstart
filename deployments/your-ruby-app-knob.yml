@@ -4,4 +4,4 @@ application:
 environment:
   RACK_ENV: "development"
 web:
-  context: "ruby/"
+  context: "/ruby"
