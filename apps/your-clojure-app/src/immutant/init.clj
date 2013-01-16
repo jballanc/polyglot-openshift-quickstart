@@ -4,6 +4,6 @@
         [ring.util.response :only [redirect]]))
 
 (defn handler [request]
-  (redirect "/index.html"))
+  (redirect "./index.html"))
 
 (immutant.web/start (wrap-resource handler "public"))
