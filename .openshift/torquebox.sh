@@ -31,7 +31,7 @@ function download_torquebox() {
 
 
 function bundle_install() {
-    find ${OPENSHIFT_REPO_DIR}/apps -t d -maxdepth 1 -print0 | while read -d $'\0' dir
+    find ${OPENSHIFT_REPO_DIR}/apps -type d -maxdepth 1 -print0 | while read -d $'\0' dir
     do
         if [ ! -d "${dir}/.bundle" ] && [ -f "${dir}/Gemfile" ]; then
           pushd ${dir} > /dev/null
