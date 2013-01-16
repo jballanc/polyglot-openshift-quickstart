@@ -5,12 +5,12 @@ function overlay_jboss() {
     mkdir -p polyglot
     if [ torquebox -nt immutant ]; then
         echo "TorqueBox is newer..."
-        cp -R immutant/ polyglot/
-        cp -R torquebox/ polyglot/
+        cp -R immutant/* polyglot/
+        cp -R torquebox/* polyglot/
     else
         echo "Immutant is newer..."
-        cp -R torquebox/ polyglot/
-        cp -R immutant/ polyglot/
+        cp -R torquebox/* polyglot/
+        cp -R immutant/* polyglot/
     fi
     echo "TorqueBox and Immutant overlayed!"
     popd >/dev/null
