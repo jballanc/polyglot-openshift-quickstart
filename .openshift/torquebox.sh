@@ -3,7 +3,7 @@ export TORQUEBOX_HOME=$OPENSHIFT_DATA_DIR/polyglot
 export JRUBY_HOME=$TORQUEBOX_HOME/jruby
 export PATH=$JRUBY_HOME/bin:$PATH
 
-function dowload_torquebox() {
+function download_torquebox() {
     # Determine whether we're getting a release or an incremental 
     if [[ ${TORQUEBOX_VERSION} =~ \. ]]; then
         # Official release, e.g. 0.9.0
