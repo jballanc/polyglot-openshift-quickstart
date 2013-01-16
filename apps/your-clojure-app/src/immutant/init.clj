@@ -3,6 +3,6 @@
   (:use [ring.util.response :only [redirect]]))
 
 (defn handler [request]
-  (redirect "./index.html"))
+  (redirect  (str  (:context request "/index.html"))))
 
-(immutant.web/wrap-resource handler "public")
+(immutant.web/start (immutant.web/wrap-resource handler "public"))
