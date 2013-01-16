@@ -131,20 +131,20 @@
   <p>
     For example, if you named your application yourapp (by passing in -a yourapp
     to the rhc app create command), the source code for your Immutant apps
-    should reside beneath yourapp/your-clojure-app/src, the runtime resources
-    beneath yourapp/your-clojure-app/resources and your dependencies, among
-    other things, specified in yourapp/your-clojure-app/project.clj. A
+    should reside beneath yourapp/apps/your-clojure-app/src, the runtime resources
+    beneath yourapp/apps/your-clojure-app/resources and your dependencies, among
+    other things, specified in yourapp/apps/your-clojure-app/project.clj. A
     deployment descriptor in which you can set various runtime options for
     yourapp can be found in yourapp/deployments/your-clojure-app.clj.
   </p>
   <p>
     Similarly, for TorqueBox apps your "rackup" file will reside at
-    yourapp/your-ruby-app/config.ru, and yourapp/your-ruby-app/ is on your load
-    path.  Static assets are beneath yourapp/your-ruby-app/public, and your
+    yourapp/your-ruby-app/config.ru, and yourapp/apps/your-ruby-app/ is on your load
+    path.  Static assets are beneath yourapp/apps/your-ruby-app/public, and your
     "deployment descriptor" is yourapp/deployments/your-ruby-app.yml.  Of
-    course, you could also create a Rails app in yourapp/your-ruby-app/ or pull
+    course, you could also create a Rails app in yourapp/apps/your-ruby-app/ or pull
     an existing one in from another git repo. Put any Rack-based app in
-    yourapp/your-ruby-app/ you like!
+    yourapp/apps/your-ruby-app/ you like!
   </p>
   <p>
     In either case, "your-clojure-app" and "your-ruby-app" can be replaced with

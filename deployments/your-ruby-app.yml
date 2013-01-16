@@ -1,4 +1,6 @@
 ---
 application:
-  root: "<%= ENV['OPENSHIFT_REPO_DIR'] %>/your-ruby-app"
+  root: "<%= ENV['OPENSHIFT_REPO_DIR'] %>/apps/your-ruby-app"
   env: development
+web:
+  context: "ruby/"
